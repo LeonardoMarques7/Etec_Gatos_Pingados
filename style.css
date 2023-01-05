@@ -14,3 +14,31 @@
 .faixa {
     margin-bottom: 10px;
 }
+
+.nav-link:hover {
+    border-bottom: 1px solid #666;
+}
+
+.img {
+    border-radius: 6px;
+}
+
+.faixa-logos {
+    text-align: center;
+}
+
+.dropdown-item:active {
+    background-color: #666;
+}
+
+.dropdown-item:hover {
+    background-color: #666;
+}
+
+.dropdown-item::after {
+    background-color: #666;
+}
+
+.dropdown-item::before {
+    background-color: #666;
+}

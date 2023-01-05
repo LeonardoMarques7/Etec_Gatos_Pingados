@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Etec Gatos Pingados</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./imgs/fav-logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="color: #37444C;"><b style="color: #9C0000;">Etec</b> Gatos Pingados</a>
+          <a class="navbar-brand" href="#"><img src="./imgs/logo.png" alt="Logo da Etec" width="100px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,14 +27,14 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Cursos
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#Adm">Administração</a></li>  
-                    <li><a class="dropdown-item" href="#Desen">Desenvolvimento de Sistemas</a></li>
-                    <li><a class="dropdown-item" href="#Even">Eventos</a></li>
-                    <li><a class="dropdown-item" href="#Edf">Edificações</a></li>
-                    <li><a class="dropdown-item" href="#Info">Informática da Internet</a></li>
-                    <li><a class="dropdown-item" href="#Logi">Logística</a></li>
-                    <li><a class="dropdown-item" href="#Recur">Recursos Humanos</a></li>
+                <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body rounded">
+                  <li><a class="dropdown-item" href="./cursos.html#Adm">Administração</a></li>  
+                  <li><a class="dropdown-item" href="./cursos.html#Desen">Desenvolvimento de Sistemas</a></li>
+                  <li><a class="dropdown-item" href="./cursos.html#Even">Eventos</a></li>
+                  <li><a class="dropdown-item" href="./cursos.html#Edf">Edificações</a></li>
+                  <li><a class="dropdown-item" href="./cursos.html#Info">Informática da Internet</a></li>
+                  <li><a class="dropdown-item" href="./cursos.html#Logi">Logística</a></li>
+                  <li><a class="dropdown-item" href="./cursos.html#Rh">Recursos Humanos</a></li>
                 </ul>
               </li>
             </ul>
@@ -46,16 +47,12 @@
     </nav>
     <img src="./imgs/banner-fp.png" alt="banner Etec" height="300px" class="faixa img-fluid"> 
 
-    <marquee direction="right" behaivor="">
-        <img src="./imgs/faixa-cps-etec.png" alt="">
-    </marquee>
-
     <section style="margin-left: 20px;">
       <h3 style="font-weight: 400;">Notícias</h3>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col">
-            <img src="./imgs/noticia.png" class="img-fluid rounded-start" alt="...">
+            <img src="./imgs/noticia.png" class="img img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -67,6 +64,9 @@
         </div>
       </div>
     </section>
+    <div class="faixa-logos">
+      <img src="./imgs/faixa-cps-etec.png" alt="Faixa">
+    </div>
 
     <div class="footer text-center">
       <hr>
