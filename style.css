@@ -25,6 +25,9 @@
 
 .faixa-logos {
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-x: hidden;
 }
 
 .dropdown-item:active {
