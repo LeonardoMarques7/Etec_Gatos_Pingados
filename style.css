@@ -45,3 +45,8 @@
 .dropdown-item::before {
     background-color: #666;
 }
+
+.div-forms {
+    margin-left: 5px;
+    margin-right: 5px;
+}

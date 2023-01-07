@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etec Gatos Pingados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/logo-branca.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <style>
+    .row {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+    .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        color: #9C0000;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo da Etec" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="font-size: 18px;">
+                <a class="nav-link" href="https://www.vestibulinhoetec.com.br/home/">Vestibulinho</a>
+              </li>
+              <li class="nav-item" style="font-size: 18px;">
+                <a class="nav-link" href="./sobre.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item" style="font-size: 18px;">
+                <a class="nav-link" href="./contato.html">Contato</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #666;">Cursos</a>
+                <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body rounded">
+                    <li><a class="dropdown-item" href="#Adm">Administração</a></li>  
+                    <li><a class="dropdown-item" href="#Desen">Desenvolvimento de Sistemas</a></li>
+                    <li><a class="dropdown-item" href="#Even">Eventos</a></li>
+                    <li><a class="dropdown-item" href="#Edf">Edificações</a></li>
+                    <li><a class="dropdown-item" href="#Info">Informática para Internet</a></li>
+                    <li><a class="dropdown-item" href="#Logi">Logística</a></li>
+                    <li><a class="dropdown-item" href="#Rh">Recursos Humanos</a></li>
+                    <li><a class="dropdown-item" href="#Secre">Secretariado</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="div-forms">
+        <form class="row g-3">
+            <h2>Contate-nos</h2>
+            <hr>
+            <div>
+            <h5>Envie uma mensagens para nós!</h5>
+            <p style="color: #666;">Retornaremos assim que possível ;)</p>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Gatinho" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Etec32@gmail.com" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputTel" class="form-label">Telefone</label>
+                <input type="Telefone" class="form-control" id="inputTel" placeholder="+55 (15) 29292-2929">
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Destinatário</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Direção</option>
+                    <option>Coordenação de Administração</option>
+                    <option>Coordenação de Desenvolvimento de Sistemas</option>
+                    <option>Coordenação de Edificações</option>
+                    <option>Coordenação de Eventos</option>
+                    <option>Coordenação de Informática para Internet</option>
+                    <option>Coordenação de Logística</option>
+                    <option>Coordenação de Recursos Humanos</option>
+                    <option>Estágio</option>
+                    <option>Informação do Vestibulinho</option>
+                    <option>Orientação Educacional</option>
+                    <option>Secretaria</option>
+                </select>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Mande sua mensagem aqui!" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Mensagem</label>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-outline-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row d-flex">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Vestibulinho2023</h5>
+            <p class="card-text">Faça sua inscrição para o Vestibulinho de 2023 | Exame: 18/12.</p>
+            <a href="https://www.vestibulinhoetec.com.br/home/" class="btn btn-primary">Vestibulinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Rede Social</h5>
+            <p class="card-text">Venha ver nosso novo perfil do Instagram.</p>
+            <a href="https://www.instagram.com/leonardo_marques15/?theme=dark" class="btn btn-primary">@Leonardo_marques15</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="footer text-center">
+        <hr>
+            <h5>Criado por Leonardo Marques</h5>
+        <hr>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
