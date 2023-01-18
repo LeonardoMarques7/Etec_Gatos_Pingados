@@ -17,6 +17,9 @@
 
 .nav-link:hover {
     border-bottom: 1px solid #666;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(59, 59, 59, 0.144);
 }
 
 .img {
@@ -49,4 +52,16 @@
 .div-forms {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.active{
+    border-bottom: 1px solid rgb(255, 0, 0);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.137);
+}
+
+.faixa-logos {
+    margin-left: 10px;
+    margin-right: 10px;
 }
