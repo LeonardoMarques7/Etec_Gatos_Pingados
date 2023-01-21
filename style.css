@@ -16,6 +16,8 @@
 }
 
 .nav-link:hover {
+    transition: 0.5ms;
+    opacity: 90%;
     border-bottom: 1px solid #666;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -63,3 +65,41 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.logos-insta {
+    width: 30px;
+}
+
+.logos-insta:hover {
+    margin-top: 2px;
+    transition: 0.5ms;
+}
+
+svg:hover path {
+    fill: #0d6efd;
+}
+
+.divi-sobre {
+    display: flex;
+}
+
+.pag-sobre {
+    margin-left: 20px;
+}
+
+.links-sobre {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.links-sobre:hover {
+    font-weight: bolder;
+    color: #9c0000;
+}
+
+li > .dropdown-item:hover{
+    background-color: #9c000060;
+    border-radius: 5px;
+}
+
