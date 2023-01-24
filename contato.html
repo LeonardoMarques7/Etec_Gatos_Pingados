@@ -25,7 +25,12 @@
     }
 
     .contatos-text {
-      margin-bottom: -5px;
+      margin-left: 10px;
+    }
+    
+    hr {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   </style>
   <body>
@@ -73,51 +78,50 @@
           </div>
         </div>
     </nav>
-
+    <h2 class="contatos-text" style="color: #666;">Contate-nos</h2><hr>
     <div class="div-forms">
-        <form class="row g-3">
-            <h2 class="contatos-text" style="color: #666;">Contate-nos</h2><hr>
-            <div>
-              <h5>Envie uma mensagens para nós!</h5>
-              <p style="color: #666;">Retornaremos assim que possível ;)</p>
+      <form class="row g-3">
+          <div>
+            <h5>Envie uma mensagens para nós!</h5>
+            <p style="color: #666;">Retornaremos assim que possível ;)</p>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Gatinho" aria-label="First name">
+          </div>
+          <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Etec32@gmail.com" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+              <label for="inputTel" class="form-label">Telefone</label>
+              <input type="Telefone" class="form-control" id="inputTel" placeholder="+55 (15) 29292-2929">
+          </div>
+          <div class="col-md-6">
+              <label for="inputState" class="form-label">Destinatário</label>
+              <select id="inputState" class="form-select">
+                  <option selected>Direção</option>
+                  <option>Coordenação de Administração</option>
+                  <option>Coordenação de Desenvolvimento de Sistemas</option>
+                  <option>Coordenação de Edificações</option>
+                  <option>Coordenação de Eventos</option>
+                  <option>Coordenação de Informática para Internet</option>
+                  <option>Coordenação de Logística</option>
+                  <option>Coordenação de Recursos Humanos</option>
+                  <option>Estágio</option>
+                  <option>Informação do Vestibulinho</option>
+                  <option>Orientação Educacional</option>
+                  <option>Secretaria</option>
+              </select>
+          </div>
+          <div>
+              <label for="floatingTextarea2" class="form-label">Mensagem</label>
+              <textarea maxlength="500" class="form-control" placeholder="Mande sua mensagem aqui. Máximo de 500 Caracteres!!!" id="floatingTextarea2" style="height: 100px"></textarea>
             </div>
-            <div class="col-md-6">
-                <label class="form-label">Nome</label>
-                <input type="text" class="form-control" placeholder="Gatinho" aria-label="First name">
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="Etec32@gmail.com" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputTel" class="form-label">Telefone</label>
-                <input type="Telefone" class="form-control" id="inputTel" placeholder="+55 (15) 29292-2929">
-            </div>
-            <div class="col-md-6">
-                <label for="inputState" class="form-label">Destinatário</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Direção</option>
-                    <option>Coordenação de Administração</option>
-                    <option>Coordenação de Desenvolvimento de Sistemas</option>
-                    <option>Coordenação de Edificações</option>
-                    <option>Coordenação de Eventos</option>
-                    <option>Coordenação de Informática para Internet</option>
-                    <option>Coordenação de Logística</option>
-                    <option>Coordenação de Recursos Humanos</option>
-                    <option>Estágio</option>
-                    <option>Informação do Vestibulinho</option>
-                    <option>Orientação Educacional</option>
-                    <option>Secretaria</option>
-                </select>
-            </div>
-            <div>
-                <label for="floatingTextarea2" class="form-label">Mensagem</label>
-                <textarea maxlength="500" class="form-control" placeholder="Mande sua mensagem aqui. Máximo de 500 Caracteres!!!" id="floatingTextarea2" style="height: 100px"></textarea>
-              </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-outline-success">Enviar</button>
-            </div>
-        </form>
+          <div class="col-12">
+              <button type="submit" class="btn btn-outline-success">Enviar</button>
+          </div>
+      </form>
     </div>
 
     <div class="row d-flex">
