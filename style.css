@@ -103,3 +103,11 @@ li > .dropdown-item:hover{
     border-radius: 5px;
 }
 
+.links-sobre-1 {
+    color: white;
+}
+
+.links-sobre-1:hover {
+    color: #ff0000;
+    font-weight: 400;
+}
