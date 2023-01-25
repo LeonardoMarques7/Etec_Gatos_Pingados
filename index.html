@@ -18,16 +18,60 @@
     }
 
     .card-title {
-      color: #9C0000;
+      color: black;
     }
 
     .links-sobre-1:hover {
-      color: #ff0000;
+      color: #9C0000;
       font-weight: 400;
     }
 
     .links-sobre-1 {
       color: white;
+    }
+
+    .links-index {
+      font-weight: 400;
+      color: #666;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .links-index:hover {
+      color: #28b862;
+    }
+
+    .traço-div {
+      border-left: 3px solid #28b862;
+    }
+
+    .border-div {
+      border: 1px rgba(102, 102, 102, 0.493) ;
+      border-style: dashed;
+    }
+
+    .text-div {
+      padding: 5px;
+      padding-top: 20px;
+      color: #666;
+    }
+
+    .btn-agenda {
+      border-radius: 1px;
+      color: black;
+      text-transform: uppercase;
+      border: 1px solid rgba(102, 102, 102, 0.39);
+      float: right;
+      margin-right: 20px;
+      margin-top: 5px;
+    }
+
+    svg:hover {
+      color: black;
+    }
+
+    path:hover {
+      color: black;
     }
   </style>
   <body>
@@ -94,25 +138,82 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
     <br>
-    <section style="margin-left: 20px; margin-right: 20px;">
-      <h3 style="font-weight: 400; margin-bottom: 15px;">Notícias</h3>
-      <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col">
-            <img src="./imgs/noticia.png" class="img img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h4 class="card-title">Demanda de Cursos Alta</h4>
-              <p class="card-text">Nesse ano de 2023 tivemos uma alta demanda de inscrições no curso de Eventos. Com um total de 350 Alunos participando do Vestibulinho2023</p>
-              <p class="card-text"><small class="text-muted">20/11/2022 - Leonardo Marques</small></p>
+    <section class="divi-sobre d-flex flex-wrap">
+      <section class="col-sm-8" style="margin-left: 20px; margin-right: 20px;">
+        <h3 style="font-weight: 400; margin-bottom: 15px;">Notícias</h3>
+        <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col">
+              <img src="./imgs/noticia.png" class="img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title">Demanda de Cursos Alta</h4>
+                <p class="card-text">Nesse ano de 2023 tivemos uma alta demanda de inscrições no curso de Eventos. Com um total de 350 Alunos participando do Vestibulinho2023</p>
+                <p class="card-text"><small class="text-muted"><button class="btn bg-primary text-white" style="font-size: 12px;">20/11/2022</button> - Leonardo Marques</small></p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <div class="pag-sobre">
+        <br>
+        <div style="width: 250px;"> 
+          <h4 style="color: rgb(70, 70, 70); margin-bottom: -8px;">Links Úteis</h4><hr style="color:rgba(102, 102, 102, 0.596);">
+        </div>
+          <div class="traço-div"><a href="http://www.autodesk.com/education/free-software/featured" class="links-index"><p><b style="color: transparent;">-</b>Autodesk Student Community</p></a></div>
+          <div class="traço-div"><a href="http://www.etec.sp.gov.br/view/Default.aspx" class="links-index"><p><b style="color: transparent;">-</b>Email Institucional</p></a></div>
+          <div class="traço-div"><a href="https://eadtec.cps.sp.gov.br/" class="links-index"><p><b style="color: transparent;">-</b>Ambiente Virtual - EAD</p></a></div>
+          <div class="traço-div"><a href="https://nsa.cps.sp.gov.br/" class="links-index"><p><b style="color: transparent;">-</b>NSA - Sistema Acadêmico</p></a></div>
       </div>
     </section>
+    <div style="margin-left: 20px; margin-right: 20px;">
+      <hr style="color: #666;">
+      <section class="divi-sobre d-flex flex-wrap">
+      <div class="parceiros col-sm-6">
+        <h3 style="font-weight: 400; margin-bottom: 15px;">Parceiros</h3>
+      </div>
+      <div class="agenda col-sm-6">
+        <h3 style="font-weight: 400; margin-bottom: 15px;">Agenda</h3>
+        <div class="border-div">
+          <p class="text-center text-div">Sem eventos no momento</p>
+        </div>
+      </div>
+      </section>
+    </div>
+    <div>
+      <button class="btn-sm btn-agenda"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="17px" height="17px" style="margin-bottom: 2px;" viewBox="0 0 652.801 652.801"
+        xml:space="preserve">
+     <g>
+       <g>
+         <g>
+           <path d="M142.8,408h40.8c22.542,0,40.8-18.279,40.8-40.801V326.4c0-22.542-18.258-40.8-40.8-40.8h-40.8
+             c-22.542,0-40.8,18.258-40.8,40.8v40.799C102,389.721,120.258,408,142.8,408z M142.8,326.4h40.8v40.799h-40.8V326.4z
+              M469.2,571.199H510c22.542,0,40.801-18.258,40.801-40.799V489.6c0-22.541-18.259-40.799-40.801-40.799h-40.8
+             c-22.521,0-40.8,18.258-40.8,40.799V530.4C428.4,552.941,446.658,571.199,469.2,571.199z M469.2,489.6H510V530.4h-40.8V489.6z
+              M469.2,408H510c22.542,0,40.801-18.279,40.801-40.801V326.4c0-22.542-18.259-40.8-40.801-40.8h-40.8
+             c-22.521,0-40.8,18.258-40.8,40.8v40.799C428.4,389.721,446.658,408,469.2,408z M469.2,326.4H510v40.799h-40.8V326.4z
+              M550.801,40.8H469.2V20.4c0-11.261-9.139-20.4-20.399-20.4s-20.4,9.139-20.4,20.4v20.4h-204V20.4C224.4,9.139,215.261,0,204,0
+             s-20.4,9.139-20.4,20.4v20.4H102c-45.063,0-81.6,36.537-81.6,81.6v448.799c0,45.064,36.537,81.602,81.6,81.602h448.8
+             c45.063,0,81.6-36.537,81.6-81.602V122.4C632.4,77.336,595.864,40.8,550.801,40.8z M591.601,571.199
+             c0,22.543-18.258,40.801-40.8,40.801H102c-22.542,0-40.8-18.279-40.8-40.801V204h530.4V571.199z M591.601,163.2H61.2v-40.8
+             c0-22.542,18.258-40.8,40.8-40.8h81.6V102c0,11.261,9.139,20.4,20.4,20.4s20.4-9.139,20.4-20.4V81.6h204V102
+             c0,11.261,9.14,20.4,20.4,20.4S469.2,113.261,469.2,102V81.6h81.601c22.542,0,40.8,18.258,40.8,40.8V163.2z M306,571.199h40.8
+             c22.542,0,40.8-18.258,40.8-40.799V489.6c0-22.541-18.258-40.799-40.8-40.799H306c-22.521,0-40.8,18.258-40.8,40.799V530.4
+             C265.2,552.941,283.458,571.199,306,571.199z M306,489.6h40.8V530.4H306V489.6z M306,408h40.8c22.542,0,40.8-18.279,40.8-40.801
+             V326.4c0-22.542-18.258-40.8-40.8-40.8H306c-22.521,0-40.8,18.258-40.8,40.8v40.799C265.2,389.721,283.458,408,306,408z
+              M306,326.4h40.8v40.799H306V326.4z M142.8,571.199h40.8c22.542,0,40.8-18.258,40.8-40.799V489.6
+             c0-22.541-18.258-40.799-40.8-40.799h-40.8c-22.542,0-40.8,18.258-40.8,40.799V530.4C102,552.941,120.258,571.199,142.8,571.199z
+              M142.8,489.6h40.8V530.4h-40.8V489.6z"/>
+         </g>
+       </g>
+     </g>
+     </svg> Agenda</button>
+    </div>
+    <br>
+    <br>
     <div class="faixa-logos">
       <img src="./imgs/faixa-cps-etec.png" alt="Faixa" class="img-fluid">
     </div>
@@ -121,18 +222,15 @@
       <div class="container">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
               <img src="./imgs/logo.png" alt="" width="150px" style="border-radius: 10px;">
             </a>
             <p class="text-muted">Direitos Reservados da Etec Gatos Pingados&copy; 1999 - 2023</p>
           </div>
-      
           <div class="col mb-3">
-      
           </div>
-      
           <div class="col mb-3">
-            <h5>Páginas</h5>
+            <h5 class="title-footer">Páginas</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="./agenda.html" class="nav-link p-0 links-sobre-1">Agenda</a></li>
               <li class="nav-item mb-2"><a href="./contato.html" class="nav-link p-0 links-sobre-1">Contato</a></li>
@@ -145,7 +243,7 @@
             </ul>
           </div>
           <div class="col mb-3">
-            <h5>Cursos</h5>
+            <h5 class="title-footer">Cursos</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="./cursos.html#Adm" class="nav-link p-0 links-sobre-1">Administração</a></li>
               <li class="nav-item mb-2"><a href="./cursos.html#Desen" class="nav-link p-0 links-sobre-1">Desen. de Sistemas</a></li>

@@ -111,3 +111,21 @@ li > .dropdown-item:hover{
     color: #ff0000;
     font-weight: 400;
 }
+
+@media screen and (max-width: 500px) {
+    .parceiros {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        color: transparent;
+    }
+}
+
+.border-div {
+    width: 100%;
+    padding: 0px 150px 0px 150px;
+}
+
+.title-footer {
+    color: #9c0000;
+}
