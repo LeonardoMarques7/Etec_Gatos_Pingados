@@ -129,3 +129,12 @@ li > .dropdown-item:hover{
 .title-footer {
     color: #9c0000;
 }
+
+.pages {
+    height: 100vh;
+}
+
+.texto_traco {
+    text-decoration: underline;
+    padding-top: 5px;
+}

@@ -9,127 +9,81 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <style>
-    .row {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 20px;
-    }
-
-    .card, .margin-col {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .card-title {
-        font-weight: 400;
-    }
-
-    .card-text {
-        font-size: 18px;
-        color: #666;
-    }
-
-    .pesquisa {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .vazio {
-        margin-top: 10px;
-        border: 1px solid rgba(102, 102, 102, 0.253);
-        border-radius: 4px;
-    }
-
-    .margin-card-l {
-        margin-left: -16px;
-    }
-
-    .margin-card-r {
-        margin-left: 16px;
-    }
-
-    h2 {
-        color: #666;
-        margin-left: 20px;
-    }
-
-    hr {
-        color: #666;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .links-sobre-1:hover {
+  .links-sobre-1:hover {
       color: #ff0000;
       font-weight: 400;
     }
 
-    .links-sobre-1 {
-      color: white;
-    }
+  .links-sobre-1 {
+    color: white;
+  }
+
+  .pages {
+    height: 100vh;
+  }
 </style>
 <body>
     <section class="pages">
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo da Etec" width="100px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item" style="font-size: 18px;">
-                        <a class="nav-link active" href="./agenda.html">Agenda</a>
-                    </li>
-                    <li class="nav-item" style="font-size: 18px;">
-                        <a class="nav-link" href="./contato.html">Contato</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #666;">Cursos</a>
-                        <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body rounded">
-                            <li><a class="dropdown-item" href="./cursos.html#Adm">Administração</a></li>  
-                            <li><a class="dropdown-item" href="./cursos.html#Desen">Desenvolvimento de Sistemas</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html#Even">Eventos</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html#Edf">Edificações</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html#Info">Informática para Internet</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html#Logi">Logística</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html#Rh">Recursos Humanos</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html#Secre">Secretariado</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" style="font-size: 18px;">
-                        <a class="nav-link" href="./noticias.html">Notícias</a>
-                    </li>
-                    <li class="nav-item" style="font-size: 18px;">
-                        <a class="nav-link" href="./sobre.html">Sobre Nós</a>
-                    </li>
-                    <li class="nav-item" style="font-size: 18px;">
-                        <a class="nav-link" href="https://www.vestibulinhoetec.com.br/home/">Vestibulinho</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo da Etec" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="font-size: 18px;">
+                            <a class="nav-link" href="./agenda.html">Agenda</a>
+                        </li>
+                        <li class="nav-item" style="font-size: 18px;">
+                            <a class="nav-link" href="./contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #666;">Cursos</a>
+                            <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body rounded">
+                                <li><a class="dropdown-item" href="./cursos.html#Adm">Administração</a></li>  
+                                <li><a class="dropdown-item" href="./cursos.html#Desen">Desenvolvimento de Sistemas</a></li>
+                                <li><a class="dropdown-item" href="./cursos.html#Even">Eventos</a></li>
+                                <li><a class="dropdown-item" href="./cursos.html#Edf">Edificações</a></li>
+                                <li><a class="dropdown-item" href="./cursos.html#Info">Informática para Internet</a></li>
+                                <li><a class="dropdown-item" href="./cursos.html#Logi">Logística</a></li>
+                                <li><a class="dropdown-item" href="./cursos.html#Rh">Recursos Humanos</a></li>
+                                <li><a class="dropdown-item" href="./cursos.html#Secre">Secretariado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="font-size: 18px;">
+                            <a class="nav-link" href="./noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item" style="font-size: 18px;">
+                            <a class="nav-link active" href="./sobre.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item" style="font-size: 18px;">
+                            <a class="nav-link" href="https://www.vestibulinhoetec.com.br/home/">Vestibulinho</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h2 style="margin-left: 20px; color: #666;">Manual do TCC</h2><hr style="margin-left: 20px; margin-right: 20px;">
+        <section class="divi-sobre d-flex flex-wrap">
+            <div class="col-sm-8 sobre" style="font-size: 18px; font-weight: 400; color: #666; margin-left: 20px;">
+                <p>Manual de TCC, modelo oficial do Centro Paula Souza..</p>
+                <a href="https://www.etecfernandoprestes.com.br/Uploads/Files/Manager/institucional/402-MANUAL_TCC.pdf"><button class="btn btn-primary w-100 rounded-1">VEJA O MANUAL DO TCC</button></a>
+            </div>
+            <div class="pag-sobre" style="max-width: 300px;">
+                <br>
+                <div style="width: 250px;"> 
+                    <h4 style="color: rgb(70, 70, 70); margin-bottom: -8px;">Páginas Relacionadas</h4><hr style="color:rgba(102, 102, 102, 0.596);">
+                </div>
+                <ul>
+                    <li><a href="./calendario.html" class="links-sobre"><p>Calendário Escolar</p></a>
+                    <li><a href="./manu_aluno.html" class="links-sobre"><p>Manual do Aluno</p></a></li>
+                    <li><a href="./Empregos.html" class="links-sobre"><p>Empregos & Estágios</p></a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-                </form>
             </div>
-        </div>
-    </nav>
-    <h2>Todos os eventos</h2><hr>
-    <div class="col pesquisa">
-        <form class="d-flex disabled" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar por..." aria-label="Search">
-            <button class="btn btn-outline-secondary disabled" type="submit">Buscar</button>
-        </form>
-        <p class="vazio" style="color: white;">-</p>
-        <div class="row">
-            <div class="col">
-                <a class="btn btn-outline-secondary disabled margin-card-l" style="width: 100%; font-size: 18px;"> ← Anterior</a>
-            </div>
-            <div class="col">
-                <a class="btn btn-outline-secondary disabled margin-card-r" style="width: 100%; font-size: 18px;">Próximo →</a>
-            </div>
-        </div>
-    </div>
+        </section>
     </section>
     <div class="faixa-logos">
         <img src="./imgs/faixa-cps-etec.png" alt="Faixa" class="img-fluid">
@@ -180,6 +134,8 @@
         </div>
         <div style="margin-top: -60px;"> - </div>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
