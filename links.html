@@ -67,6 +67,26 @@
     .links-sobre-1 {
       color: white;
     }
+
+    .traço-div {
+      border-left: 3px solid #28b862;
+    }
+
+    .links-index {
+      font-weight: 400;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .links-index:hover {
+      color: #28b862;
+    }
+
+    .pag-sobre {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 </style>
 <body>
     <section class="pages">
@@ -114,22 +134,31 @@
             </div>
         </div>
     </nav>
-    <h2>Todos os eventos</h2><hr>
-    <div class="col pesquisa">
-        <form class="d-flex disabled" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar por..." aria-label="Search">
-            <button class="btn btn-outline-secondary disabled" type="submit">Buscar</button>
-        </form>
-        <p class="vazio" style="color: white;">-</p>
-        <div class="row">
-            <div class="col">
-                <a class="btn btn-outline-secondary disabled margin-card-l" style="width: 100%; font-size: 18px;"> ← Anterior</a>
+    <section class="pag-sobre">
+        <h2>Todos os links úteis</h2><hr>
+        <div class="col pesquisa">
+            <form class="d-flex disabled" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar por..." aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+            </form>
+            <div class="">
+                <hr style="margin-left: 0px; margin-right: 0px; color: rgba(102, 102, 102, 0.636);">
+                <div class="traço-div"><a href="http://www.autodesk.com/education/free-software/featured" class="links-index"><p><b style="color: transparent;">-</b>Autodesk Student Community</p></a></div>
+                <div class="traço-div"><a href="http://www.etec.sp.gov.br/view/Default.aspx" class="links-index"><p><b style="color: transparent;">-</b>Email Institucional</p></a></div>
+                <div class="traço-div"><a href="https://eadtec.cps.sp.gov.br/" class="links-index"><p><b style="color: transparent;">-</b>Ambiente Virtual - EAD</p></a></div>
+                <div class="traço-div"><a href="https://nsa.cps.sp.gov.br/" class="links-index"><p><b style="color: transparent;">-</b>NSA - Sistema Acadêmico</p></a></div>
+                <hr style="margin-left: 0px; margin-right: 0px; color: rgba(102, 102, 102, 0.636);">
             </div>
-            <div class="col">
-                <a class="btn btn-outline-secondary disabled margin-card-r" style="width: 100%; font-size: 18px;">Próximo →</a>
+            <div class="row">
+                <div class="col">
+                    <a class="btn btn-outline-secondary disabled margin-card-l" style="width: 100%; font-size: 18px;"> ← Anterior</a>
+                </div>
+                <div class="col">
+                    <a class="btn btn-outline-secondary disabled margin-card-r" style="width: 100%; font-size: 18px;">Próximo →</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     </section>
     <div class="faixa-logos">
         <img src="./imgs/faixa-cps-etec.png" alt="Faixa" class="img-fluid">
