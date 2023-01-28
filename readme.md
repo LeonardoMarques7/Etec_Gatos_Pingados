@@ -1,4 +1,4 @@
-Oiii, Tudo Bom? ;)
+<h2>Oiii, Tudo Bom? ;)</h2>
 
 Com esse Projeto no GitHub, fiz um "remake" do site da minha escola(Fernando Prestes).
 Mas queria deixar claro que não é uma cópia ao site, mas sim um projeto meu de aprendizado, não quero refazer o trabalho de nínguem, só fiz por aprendizado. 
