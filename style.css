@@ -132,3 +132,11 @@ li > .dropdown-item:hover{
     text-decoration: underline;
     padding-top: 5px;
 }
+
+.item-li {
+    list-style: circle;
+}
+
+.item-li:hover {
+    color: #9C0000;
+} 
