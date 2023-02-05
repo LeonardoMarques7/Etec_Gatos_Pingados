@@ -69,14 +69,8 @@
 .logos-insta {
     width: 30px;
 }
-
-.logos-insta:hover {
-    margin-top: 2px;
-    transition: 0.5ms;
-}
-
 svg:hover path {
-    fill: #0d6efd;
+    fill: #9c0000;
 }
 
 .divi-sobre {

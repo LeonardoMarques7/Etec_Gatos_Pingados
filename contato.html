@@ -43,6 +43,45 @@
     .links-sobre-1 {
       color: white;
     }
+
+    .logos-insta:hover {
+      transform: rotate(-180deg);
+      position:relative; 
+
+      -webkit-animation: rodaroda 3s linear alternate 3;
+      -moz-animation: rodaroda 3.0s linear infinite;
+      -ms-animation: rodaroda 3.0s linear infinite;
+      -o-animation: rodaroda 3.0s linear infinite;
+      animation: rodaroda 3.0s linear infinite;
+    }
+
+    /* KEY FRAMES PARA FAZER OS GIROS */
+    @-webkit-keyframes rodaroda {
+      0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+      50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+      100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+    }
+    @-moz-keyframes rodaroda {
+      0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+      50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+      100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+    }
+    @-ms-keyframes rodaroda {
+      0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+      50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+      100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+    }
+    @-o-keyframes rodaroda {
+      0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+      50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+      100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+    }
+    @keyframes rodaroda {
+      0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+      50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+      100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+    }
+    
   </style>
   <body>
     <nav class="navbar navbar-expand-lg bg-transparent">
@@ -96,25 +135,26 @@
     <div class="div-forms">
       <form class="row g-3">
           <div>
-            <h5>Envie uma mensagens para nós!</h5>
-            <p style="color: #666;">Retornaremos assim que possível ;)</p>
+            <h4>Envie uma mensagens para nós!</h4>
+            <h5 style="color: #666;">Retornaremos assim que possível ;)</>
           </div>
           <div class="col-md-6">
               <label class="form-label">Nome</label>
-              <input type="text" class="form-control" placeholder="Gatinho" aria-label="First name">
+              <input type="text" class="form-control" placeholder="Gatinho" aria-label="Primeiro Nome" required> 
           </div>
           <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" placeholder="Etec32@gmail.com" id="inputEmail4">
+              <input type="email" class="form-control" placeholder="Etec32@gmail.com" id="inputEmail4" required>
           </div>
           <div class="col-md-6">
               <label for="inputTel" class="form-label">Telefone</label>
-              <input type="Telefone" class="form-control" id="inputTel" placeholder="+55 (15) 29292-2929">
+              <input type="Telefone" class="form-control" id="inputTel" placeholder="(15) 29292-2929" required>
           </div>
           <div class="col-md-6">
               <label for="inputState" class="form-label">Destinatário</label>
-              <select id="inputState" class="form-select">
-                  <option selected>Direção</option>
+              <select id="inputState" class="form-select" required>
+                  <option selected disabled value="">Selecionar Destinatário..</option>
+                  <option>Direção</option>
                   <option>Coordenação de Administração</option>
                   <option>Coordenação de Desenvolvimento de Sistemas</option>
                   <option>Coordenação de Edificações</option>
@@ -128,12 +168,19 @@
                   <option>Secretaria</option>
               </select>
           </div>
-          <div>
-              <label for="floatingTextarea2" class="form-label">Mensagem</label>
-              <textarea maxlength="500" class="form-control" placeholder="Mande sua mensagem aqui. Máximo de 500 Caracteres!!!" id="floatingTextarea2" style="height: 100px"></textarea>
-            </div>
           <div class="col-12">
-              <button type="submit" class="btn btn-outline-success">Enviar</button>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Eu aceito os termos e condições.
+              </label>
+              <div class="invalid-feedback">
+                Você deve aceitar antes de enviar.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-outline-primary" type="submit">Enviar</button>
           </div>
       </form>
     </div>
