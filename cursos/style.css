@@ -147,3 +147,8 @@ li > .dropdown-item:hover{
 .nav {
     width: 100%;
 }
+
+.link-curso {
+    border-left: transparent;
+    border-bottom: 1px solid white;
+}
