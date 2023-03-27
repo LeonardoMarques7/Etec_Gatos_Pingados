@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <section class="justify-content-center w-100" style="width: 400px;">
+        <form class="form" autocomplete="on" width="300px">
+            <div class="codigo row">
+                <div class="col" style="width: 180px; margin-left: 12px;">
+                    <label for="tipo-usuario">Entrar como:</label>
+                    <select class="form-select" id="tipo-usuario" name="tipo-usuario" required>
+                        <option value="aluno">Aluno</option>
+                        <option value="etec">Etec</option>
+                        <option value="professor">Professor</option>
+                        <option value="responsavel">Responsável</option>
+                        <option value="supervisor">Supervisor</option>
+                    </select>
+                </div>
+                <div class="col" id="codigo-etec" style="margin-left: 12px;">
+                    <label for="etec">Código Etec: </label>
+                    <input class="form-control" placeholder="000" type="etec" id="etec" name="etec" style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; width: 125px;" required><br>
+                </div>
+            </div>
+            <label for="rm">Login/Rm:</label>
+            <input class="form-control" type="rm" id="rm" name="rm" style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; width: 300px;" required autocomplete="current-password">
+            <label for="password">Senha:</label>
+            <input class="form-control" type="password" id="senha" name="senha" style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; width: 300px;" required autocomplete="current-password"><br>
+            <div class="codigo row">
+                <input class="btn btn-login-l btn-outline-primary" type="submit" value="Entrar" style="width: 100px;">
+                <input class="btn btn-login-d btn-outline-danger" type="reset" value="Limpar" style="width: 100px;">
+            </div>
+        </form>
+        <div id="popup" style="display: none; margin-top: 200px;" class="text-center rounded">Senha incorreta!! Tente novamente.</div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
